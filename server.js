@@ -6,6 +6,7 @@ const port = 3000
 app.use(express.static(__dirname + '/dist/ecom-portal'));
 
 app.use('/*', (req, res) => {
+  //console.log("Index Page");
   res.sendFile(path.join(__dirname + '/dist/ecom-portal/index.html'));
 });
 
