@@ -1,15 +1,15 @@
 <form class="example-form" (submit)="login()">
   <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Email</mat-label>
-    <input matInput placeholder="Email" name="email" [(ngModel)]="user.email">
+    <mat-label>User</mat-label>
+    <input matInput placeholder="User" name="userId" [(ngModel)]="order.userId">
   </mat-form-field>
 
   <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Password</mat-label>
-    <input matInput placeholder="password" type="password" name="password" [(ngModel)]="user.password">
+    <mat-label>Total</mat-label>
+    <input matInput placeholder="Total" name="total" [(ngModel)]="order.total">
   </mat-form-field>
 
-  <button type="submit" mat-raised-button color="primary">Login</button>
+  <button type="submit" mat-raised-button color="primary">Place Order</button>
 
 </form>
 
