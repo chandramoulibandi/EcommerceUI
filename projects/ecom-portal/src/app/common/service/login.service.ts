@@ -14,6 +14,6 @@ export class LoginService {
   }
 
   login(user: IUser) {
-    return this.http.post(environment.apiEndPoint + '/user/login', user);
+    return this.http.post(environment.apiEndPoint+'/user/login', user);
   }
 }
