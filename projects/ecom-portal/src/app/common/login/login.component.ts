@@ -10,29 +10,29 @@ import { IOrder,IAddressSchema,ICouriesSchema,IProductSchema } from '../service/
 export class LoginComponent implements OnInit {
 
   shippingAddress: IAddressSchema={
-    addressLine1 :'192 Park Street',
-    addressLine2:'Street 24',
-    city : 'Atlanta',
-    pin : '30305'
+    addressLine1 :'',
+    addressLine2:'',
+    city : '',
+    pin : ''
   }
 
   products : IProductSchema={
     _id: '101',
-    productName: 'Laptop',
+    productName: '',
     imageUrl: 'AAA',
-    quantity: 2,
-    price: 1000
+    quantity: 0,
+    price: 0
   }
   courierInfo: ICouriesSchema={
-    courierName: 'Fedex',
-  trackingNumber: '123456'
+    courierName: '',
+  trackingNumber: ''
   }
 
   order: IOrder = {
     //email: '',
     //password: '',
     userId: '620fd1151f18076f912503d1',
-    total: 2000,
+    total: 0,
     status: 'Placed',
     createdOn: new Date(),
     shippingAddress: this.shippingAddress,
